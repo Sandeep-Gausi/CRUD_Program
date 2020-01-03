@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CRUD Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="margin:50px">
+
+    <h2 class="page-title">Add a Page</h2>
+    <a href="/" class="btn btn-primary">Back to all pages</a>
+    
+    <form method="post" action="/add-page">
+    
+        <div class="form-group">
+            <label for="">Name</label>
+            <input type="text" class="form-control" name="name" value="<%= name %>" placeholder="Title">
+        </div>
+        <div class="form-group">
+                <label for="">Department</label>
+                <input type="text" class="form-control" name="department" value="<%= department %>" placeholder="Slug">
+        </div>
+        <div class="form-group">
+                <label for="">Designation</label>
+                <input type="text" class="form-control" name="designation" value="<%= designation %>" placeholder="Slug">
+
+        </div>
+    <button class="btn btn-default">Submit</button>
+    </form> 
+</body>
+</html>
+
+
+
